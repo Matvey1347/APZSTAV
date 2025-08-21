@@ -1,0 +1,32 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --red: #e60000;
+
+  --main-color: #00409d;
+
+  /* BTN */
+  --btn-bg: var(--main-color);
+  --btn-color: #fff;
+  --btn-hover-bg: #fff;
+
+
+  /* HEADER */
+  --header-bg: rgba(0, 63, 157, 0.7);
+  --header-f-bg: var(--main-color);
+  --header-f-btn-bg: #fff;
+
+  /* Footer */
+  --footer-bg: rgba(0, 63, 157, 0.7);
+
+
+  /* Form */
+  --form-bg: rgba(0, 63, 157, 0.7);
+
+  /* Texts */
+  --title-color: var(--main-color);
+
+
+  /* Blocks */
+  --promo-bg: rgba(0, 63, 157, 0.6);
+}

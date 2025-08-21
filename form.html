@@ -1,0 +1,137 @@
+<form data-form data-form-callback="onSubmit" method="POST" class="form">
+  <div class="form__fields">
+    <!-- SIMPLE FIELD -->
+    <div class="form__field" data-form-field>
+      <label for="name">Имя*:</label>
+      <input
+        class="_req"
+        type="text"
+        name="Имя"
+        id="name"
+        placeholder="Name placeholder"
+      />
+    </div>
+    <!-- EMAIL FIELD -->
+    <div class="form__field" data-form-field>
+      <label for="email">Email*:</label>
+      <input
+        class="_req _email"
+        type="email"
+        name="Email"
+        id="email"
+        placeholder="Email placeholder"
+      />
+    </div>
+  </div>
+  <!-- PHONE INPUT -->
+  <div class="form__field" data-form-field>
+    <label for="phone">Телефон*:</label>
+    <input
+      class="_req"
+      type="tell"
+      name="Phone"
+      id="phone"
+      placeholder="Phone placeholder"
+    />
+  </div>
+
+  <!-- SELECT -->
+  <div class="form__field" data-form-field>
+    <label for="select">Выберите*:</label>
+    <select class="_req" name="Select" id="select">
+      <option value="">Выберите</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+
+  <!-- PASSWORD -->
+  <div class="form__field" data-form-field>
+    <label for="password">Пароль*:</label>
+    <div class="password__wrap" data-password>
+      <input class="_req" type="password" name="password" id="password" data-password-input />
+      <button
+        data-viewpass
+        type="button"
+        class="password__change-view flex-center"
+      >
+        <div class="password__change-view_show">
+          <img src="./image/eye.svg" alt="" />
+        </div>
+        <div class="password__change-view_hide">
+          <img src="./image/eye-cross.svg" alt="" />
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <!-- RADIO -->
+  <div class="form__field" data-form-field>
+    <label for="radio">Выберите*:</label>
+    <div class="radio-wrap _req" data-radio-wrap>
+      <div class="radio" data-radio="1">
+        <label for="radio_1">1</label>
+      </div>
+      <div class="radio" data-radio="2">
+        <label for="radio_2">2</label>
+      </div>
+      <div class="radio" data-radio="3">
+        <label for="radio_3">3</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKBOX -->
+  <div class="form__field" data-form-field>
+    <label for="checkboxes">Выберите*:</label>
+    <div class="checkbox-wrap _req" data-checkbox-wrap data-min-selected="2">
+      <div class="checkbox" data-checkbox="1">
+        <label for="checkbox_1">1</label>
+      </div>
+      <div class="checkbox" data-checkbox="2">
+        <label for="checkbox_2">2</label>
+      </div>
+      <div class="checkbox" data-checkbox="3">
+        <label for="checkbox_3">3</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEXTAREA -->
+  <div class="form__field" data-form-field>
+    <label for="message">Сообщение*:</label>
+    <textarea class="_req" name="Сообщение" id="message" rows="5"></textarea>
+  </div>
+
+  <!-- CHECKBOX -->
+  <div class="form__field checkbox-wrap" data-form-field>
+    <div class="checkbox" data-checkbox="true">
+      <input
+        id="agreement_1"
+        type="checkbox"
+        name="agreement_1"
+        class="checkbox__input _req"
+      />
+      <div class="checkbox__icon" data-icon></div>
+      <label for="agreement_1" class="checkbox__label">
+        <span>
+          Я даю свое согласие на обработку персональных данных в соответствии с
+          <a href="">Условиями</a>*
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <button class="form__btn mt-8" type="submit">Отправить</button>
+</form>
+
+<!-- Select -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<link rel="stylesheet" href="./form.css" />
+<script src="./submit.js"></script>
