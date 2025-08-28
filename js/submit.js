@@ -4,12 +4,12 @@ class FormValidator {
     error: "_error",
     messageClass: "form__message",
     messages: {
-      formSuccess: "Successfully submitted",
-      formError: "Something went wrong",
-      required: "Required field",
-      phone: "Invalid phone number",
-      email: "Invalid email",
-      passwordLength: "Password must be at least 8 characters",
+      formSuccess: "Успешно отправлено",
+      formError: "",
+      required: "Обязательное поле",
+      phone: "Некорректный номер телефона",
+      email: "Некорректный email",
+      passwordLength: "Пароль должен содержать минимум 8 символов",
     },
     phoneLength: 9,
   };
